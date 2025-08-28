@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@camunda/zeebe-element-templates-json-schema/resources/schema.json",
   "name": "Random Joke Connector",
   "id": "connectorRandomJoke",
-  "version": 2,
+  "version": 3,
   "category": {
     "id": "connectors",
     "name": "Connectors"
@@ -349,22 +349,9 @@
       "type": "Hidden"
     },
     {
-      "id": "resultVariable",
-      "label": "Result variable",
-      "description": "Name of variable to store the response in",
-      "group": "output",
-      "editable": false,
-      "binding": {
-        "key": "resultVariable",
-        "type": "zeebe:taskHeader"
-      },
-      "type": "String"
-    },
-    {
       "id": "resultExpression",
       "label": "Result expression",
       "description": "Expression to map the response into process variables",
-      "feel": "required",
       "group": "output",
       "editable": false,
       "binding": {
